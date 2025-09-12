@@ -170,6 +170,8 @@ body {
   /* end services section */
   /* preset section */
   /* end preset section */
+  /* offer section */
+  /* end offer section */
 }
 .main__hi-container {
   background: #F4F3F0;
@@ -381,4 +383,40 @@ body {
   width: 15px;
   height: 10px;
   background: url("../img/arrow.png") center/contain no-repeat;
+}
+.main__offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main__offer-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  height: 259px;
+  background: #F4F3F0;
+  margin: 100px 0;
+  border-radius: 10px;
+  border: none;
+}
+.main__offer-text {
+  width: 313px;
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 400;
+  color: #292C32;
+  margin: 80px;
+}
+.main__offer-button {
+  width: 125px;
+  height: 58px;
+  background: #3A5F56;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  margin-right: 80px;
 }/*# sourceMappingURL=style.css.map */

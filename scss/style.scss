@@ -251,8 +251,6 @@ body{
     /* end services section */
 
     /* preset section */
-
-
 	&__preset-container {
         background: $color-for-bg;
         background: url('../img/rectangle/Rectangle-red.png') right / contain no-repeat;
@@ -341,11 +339,53 @@ body{
                 background: url('../img/arrow.png') center / contain no-repeat;
             }
     }
-
-
     /* end preset section */
 
+    /* offer section */
 
+
+
+	&__offer-container {
+
+	}
+
+	&__offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+	}
+
+	&__offer-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 800px;
+        height: 259px;
+        background: $color-for-bg;
+        margin: 100px 0;
+        border-radius: 10px;
+        border: none;
+	}
+
+	&__offer-text {
+        width: 313px;
+        @include size-line(28px, 33px, 400);
+        color: $color-dark;
+        margin: 80px;
+		}
+
+	&__offer-button {
+        width: 125px;
+        height: 58px;
+        background: $color-gren;
+        @include size-line(20px, 28px, 400);
+        color: $color-white;
+        border: none;
+        border-radius: 10px;
+        margin-right: 80px;
+	}
+
+    /* end offer section */
 
 }
 
