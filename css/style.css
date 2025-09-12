@@ -82,8 +82,13 @@ body {
   background-color: #FFFFFF;
 }
 
-.container {
+.container-1200 {
   width: 1200px;
+  margin: 0 auto;
+}
+
+.container-1440 {
+  width: 1440px;
   margin: 0 auto;
 }
 
@@ -160,9 +165,13 @@ body {
 /* main  */
 .main {
   /* hi section */
-  background: #F4F3F0;
-  background: url("../img/Rectangle-top-right-green.png") right/contain no-repeat, url("../img/Rectangle-left-bottom-orange.png") left/contain no-repeat;
   /* end hi section */
+  /* services section */
+  /* end services section */
+}
+.main__hi-container {
+  background: #F4F3F0;
+  background: url("../img/rectangle/Rectangle-top-right-green.png") right/contain no-repeat, url("../img/rectangle/Rectangle-left-bottom-orange.png") left/contain no-repeat;
 }
 .main__hi {
   display: flex;
@@ -198,4 +207,89 @@ body {
 .main__hi-image {
   width: 552px;
   height: 773px;
+}
+.main__services-container {
+  background: #FFFFFF;
+  background: url("../img/rectangle/Rectangle.png") left/contain no-repeat;
+}
+.main__services {
+  margin-top: 100px;
+}
+.main__services-title-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.main__services-sab-image {
+  margin-bottom: 15px;
+}
+.main__services-sab-title {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 400;
+  margin-bottom: 11px;
+  font-family: "Source Serif 4", serif;
+  color: #3A5F56;
+}
+.main__services-sab-text {
+  width: 600px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 5px;
+  color: #292C32;
+}
+.main__services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.main__services-card {
+  width: 379px;
+  height: 304px;
+  border: none;
+  border-radius: 10px;
+  background: #F4F3F0;
+}
+.main__services-image {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.main__services-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #3A5F56;
+  font-family: "Source Serif 4", serif;
+  margin-top: 9px;
+  margin-bottom: 6px;
+  margin-left: 30px;
+}
+.main__services-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #292C32;
+  margin-bottom: 17px;
+  margin-left: 30px;
+}
+.main__services-link {
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #3A5F56;
+  position: relative;
+  padding-right: 20px;
+  margin-left: 30px;
+}
+.main__services-link::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  right: 0px;
+  width: 15px;
+  height: 10px;
+  background: url("../img/arrow.png") center/contain no-repeat;
 }/*# sourceMappingURL=style.css.map */
