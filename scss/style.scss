@@ -2,7 +2,100 @@
 @import "_reset-style";
 @import "_fonts";
 
+/* for button in header menu*/
+$color-gren: #3A5F56;
+
+$color-white: #FFFFFF;
+$color-for-bg: #F4F3F0;
+
 
 body{
     font-family: $Roboto;
+    background-color: $color-for-bg;
+}
+
+@mixin size-line($font-size, $line-height){
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+/* header*/
+.header {
+
+    &__container{
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+	&__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+	}
+
+	&__row-logo {
+            margin: 20px 0;
+	}
+
+	&__row-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+	}
+
+	&__row-nav {
+        margin-right: 20px;
+	}
+
+	&__row-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        list-style: none;
+	}
+
+    &__row-link{
+        @include size-line(16px, 16px);
+        color: $color-gren;           
+    }
+
+	&__row-button {
+            width: 122px;
+            height: 44px;
+            position: relative;
+            padding-left: 20px;
+            padding-right: 20px;
+            background: $color-gren;
+            border-radius: 10px;
+            border: none;
+            @include size-line(16px, 22px);
+            color: $color-white;
+
+            &::before{
+                position: absolute;
+                content: "";
+                top: 10px;
+                left: 0;
+                width: 17px;
+                height: 17px;
+                background: url('../img/basket.svg') center / contain no-repeat;
+                margin-left: 18px;
+            }
+
+            &::after{
+                position: absolute;
+                content: "0";
+                top: 10px;
+                right: 0;
+                width: 19px;
+                height: 18px;
+                background: $color-white;
+                margin-right: 13px;
+                border-radius: 50px;
+                color: $color-gren;
+                @include size-line(11px, 18px);
+            }
+	}
+
 }

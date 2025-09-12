@@ -53,11 +53,15 @@ table {
   border-spacing: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Roboto */
 @font-face {
   font-family: "Roboto";
   src: url("../fonts/Roboto-Italic.woff2") format("woff2"), url("../fonts/Roboto-Italic.woff") format("woff");
-  font-weight: normal;
+  font-weight: 400px;
   font-style: italic;
   font-display: swap;
 }
@@ -70,6 +74,79 @@ table {
   font-display: swap;
 }
 /* Змінні  */
+/* for button in header menu*/
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #F4F3F0;
+}
+
+/* header*/
+.header__container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__row-logo {
+  margin: 20px 0;
+}
+.header__row-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__row-nav {
+  margin-right: 20px;
+}
+.header__row-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+.header__row-link {
+  font-size: 16px;
+  line-height: 16px;
+  color: #3A5F56;
+}
+.header__row-button {
+  width: 122px;
+  height: 44px;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #3A5F56;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.header__row-button::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  background: url("../img/basket.svg") center/contain no-repeat;
+  margin-left: 18px;
+}
+.header__row-button::after {
+  position: absolute;
+  content: "0";
+  top: 10px;
+  right: 0;
+  width: 19px;
+  height: 18px;
+  background: #FFFFFF;
+  margin-right: 13px;
+  border-radius: 50px;
+  color: #3A5F56;
+  font-size: 11px;
+  line-height: 18px;
 }/*# sourceMappingURL=style.css.map */
