@@ -6,25 +6,34 @@
 $color-gren: #3A5F56;
 
 $color-white: #FFFFFF;
+/* bg for body*/
 $color-for-bg: #F4F3F0;
+
+/* for section hi*/
+$color-dark: #292C32;
+
 
 
 body{
     font-family: $Roboto;
-    background-color: $color-for-bg;
+    background-color: $color-white;
 }
 
-@mixin size-line($font-size, $line-height){
+@mixin size-line($font-size, $line-height, $font-weight){
     font-size: $font-size;
     line-height: $line-height;
+    font-weight: $font-weight;
+}
+.container{
+        width: 1200px;
+        margin: 0 auto;
 }
 
 /* header*/
 .header {
 
     &__container{
-        width: 1200px;
-        margin: 0 auto;
+
     }
 
 	&__row {
@@ -56,7 +65,7 @@ body{
 	}
 
     &__row-link{
-        @include size-line(16px, 16px);
+        @include size-line(16px, 16px, 400);
         color: $color-gren;           
     }
 
@@ -69,7 +78,7 @@ body{
             background: $color-gren;
             border-radius: 10px;
             border: none;
-            @include size-line(16px, 22px);
+            @include size-line(16px, 22px, 400);
             color: $color-white;
 
             &::before{
@@ -94,8 +103,55 @@ body{
                 margin-right: 13px;
                 border-radius: 50px;
                 color: $color-gren;
-                @include size-line(11px, 18px);
+                @include size-line(11px, 18px, 400);
             }
 	}
+}
+
+/* main  */
+.main {
+
+    /* hi section */
+    background: $color-for-bg;
+    background: 
+        url('../img/Rectangle-top-right-green.png') right / contain no-repeat,
+        url('../img/Rectangle-left-bottom-orange.png') left / contain no-repeat;
+
+	&__hi {
+        display: flex;
+        align-items: center;
+        padding: 100px 0;
+	}
+
+    &__hi-title{
+        @include size-line(48px, 58px, 400);
+        font-family: $SourceSerif;
+        color: $color-gren;
+        margin-bottom: 11px;
+    }
+
+    &__hi-description{
+        @include size-line(16px, 22px, 400);
+        color:$color-dark;
+        margin-bottom: 17px;
+    }
+
+    &__hi-button{
+        width: 118px;
+        height: 44px;
+        color: $color-white;
+        @include size-line(16px, 22px, 400);
+        border-radius: 10px;
+        border: none;
+        background: $color-gren;
+    }
+
+	&__hi-image {
+        width: 552px;
+        height: 773px;
+	}
+    /* end hi section */
 
 }
+
+

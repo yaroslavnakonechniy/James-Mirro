@@ -75,16 +75,19 @@ a {
 }
 /* Змінні  */
 /* for button in header menu*/
+/* bg for body*/
+/* for section hi*/
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #F4F3F0;
+  background-color: #FFFFFF;
 }
 
-/* header*/
-.header__container {
+.container {
   width: 1200px;
   margin: 0 auto;
 }
+
+/* header*/
 .header__row {
   display: flex;
   justify-content: space-between;
@@ -111,6 +114,7 @@ body {
 .header__row-link {
   font-size: 16px;
   line-height: 16px;
+  font-weight: 400;
   color: #3A5F56;
 }
 .header__row-button {
@@ -124,6 +128,7 @@ body {
   border: none;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
   color: #FFFFFF;
 }
 .header__row-button::before {
@@ -149,4 +154,48 @@ body {
   color: #3A5F56;
   font-size: 11px;
   line-height: 18px;
+  font-weight: 400;
+}
+
+/* main  */
+.main {
+  /* hi section */
+  background: #F4F3F0;
+  background: url("../img/Rectangle-top-right-green.png") right/contain no-repeat, url("../img/Rectangle-left-bottom-orange.png") left/contain no-repeat;
+  /* end hi section */
+}
+.main__hi {
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+}
+.main__hi-title {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 400;
+  font-family: "Source Serif 4", serif;
+  color: #3A5F56;
+  margin-bottom: 11px;
+}
+.main__hi-description {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #292C32;
+  margin-bottom: 17px;
+}
+.main__hi-button {
+  width: 118px;
+  height: 44px;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  border-radius: 10px;
+  border: none;
+  background: #3A5F56;
+}
+.main__hi-image {
+  width: 552px;
+  height: 773px;
 }/*# sourceMappingURL=style.css.map */
