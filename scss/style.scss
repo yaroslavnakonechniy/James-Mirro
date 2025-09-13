@@ -12,6 +12,14 @@ $color-for-bg: #F4F3F0;
 /* for section hi*/
 $color-dark: #292C32;
 
+$color-red: #DB343B;
+
+/* for footer section */
+$color-brow: #B87D58;
+
+/* for placeholder */
+$color-gray: #ABABAB;
+
 
 
 body{
@@ -198,6 +206,7 @@ body{
         display: flex;
         flex-wrap: wrap;
         gap: 16px;
+        padding-bottom: 100px;
     }
 
 	&__services-card {
@@ -247,8 +256,241 @@ body{
 	}
     /* end services section */
 
+    /* preset section */
+	&__preset-container {
+        background: $color-for-bg;
+        background: url('../img/rectangle/Rectangle-red.png') right / contain no-repeat;
+	}
 
+	&__preset {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+	}
+
+	&__preset-title-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        margin-bottom: 47px;
+	}
+
+	&__preset-sab-image {
+        margin-bottom: 15px;
+	}
+
+	&__preset-sab-title {
+        @include size-line(32px, 38px, 400);
+        color: $color-red;
+	}
+
+	&__preset-sab-text {
+        @include size-line(16px, 22px, 400);
+        color: $color-dark;
+        width: 600px;
+        text-align: center;
+        margin: 0 5px;
+	}
+
+	&__preset-cards {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 30px;
+	}
+
+	&__preset-card {
+        width: 379px;
+        height: 438px;
+        background: $color-white;
+        border-radius: 10px;
+        border: none;
+	}
+
+	&__preset-image {
+        margin-bottom: 30px;
+	}
+
+	&__preset-title {
+        @include size-line(24px, 33px, 400);
+        color: $color-gren;
+        font-family: $SourceSerif;
+        margin-bottom: 6px;
+        margin-left: 30px;
+	}
+
+	&__preset-text {
+        @include size-line(16px, 22px, 400);
+        color: $color-gren;
+        margin-bottom: 26px;
+        margin-left: 30px;
+	}
+
+    &__preset-link{
+        @include size-line(17px, 23px, 400);
+        color: $color-gren;
+        position: relative;
+        padding-right: 20px;
+        margin-left: 30px;
+        margin-bottom: 100px;
+            &::after{
+                position: absolute;
+                content: '';
+                top: 7px;
+                right: 0px;
+                width: 15px;
+                height: 10px;
+                background: url('../img/arrow.png') center / contain no-repeat;
+            }
+    }
+    /* end preset section */
+
+    /* offer section */
+	&__offer-container {
+        background: url('../img/rectangle/Rectangle-orange.png') left / contain no-repeat;
+
+	}
+
+	&__offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+	}
+
+	&__offer-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 800px;
+        height: 259px;
+        background: $color-for-bg;
+        margin: 100px 0;
+        border-radius: 10px;
+        border: none;
+	}
+
+	&__offer-text {
+        width: 313px;
+        @include size-line(28px, 33px, 400);
+        color: $color-dark;
+        margin: 80px;
+		}
+
+	&__offer-button {
+        width: 125px;
+        height: 58px;
+        background: $color-gren;
+        @include size-line(20px, 28px, 400);
+        color: $color-white;
+        border: none;
+        border-radius: 10px;
+        margin-right: 80px;
+	}
+    /* end offer section */
 }
+
+/* footer */
+.footer {
+
+	&__container {
+        background: $color-dark;
+        padding: 100px 0;
+	}
+
+	&__container-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+	}
+
+	&__title {
+        margin-bottom: 75px;
+	}
+
+	&__content {
+        display:flex;
+        margin-bottom: 27px;
+	}
+
+	&__content-columns {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+	}
+
+	&__content-column {
+        width: 220px;
+
+	}
+
+	&__continer-form {
+        width: 457px;
+        position: relative;
+	}
+
+    &__content-pages{
+        margin-bottom: 39px;
+    }
+
+    &__content-packs{
+        margin-bottom: 20px;
+    }
+
+    &__content-title{
+        @include size-line(14px, 19px, 400);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: $color-brow;
+        margin-bottom: 10px;
+    }
+
+    &__content-list, &__content-form-text, &__copy-right{
+        @include size-line(16px, 32px, 400);
+        color: $color-white;
+    }
+
+    &__content-form-input{
+        width: 458px;
+        height: 53px;
+        border-radius: 10px;
+        border: none;
+        margin-top: 8px;
+        padding-left: 25px;
+
+        &::placeholder{
+            color: $color-gray;
+            @include size-line(16px, 32px, 400);
+        }
+    }
+
+    &__content-submit{
+        position: absolute;
+        @include size-line(16px, 32px, 400);
+        background: $color-dark;
+        color: $color-white;
+        border-radius: 10px;
+        border:none;
+        width: 71px;
+        height: 39px;
+        top: 107px;
+        right: -20px;
+    }
+
+	&__copy-right-box {
+        width: 1220px;
+        display: flex;
+        justify-content: space-between;
+	}
+
+	&__media-contact {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+	}
+}
+
+/* end footer */
 
 
