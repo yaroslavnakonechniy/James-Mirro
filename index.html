@@ -12,13 +12,23 @@
         <!-- header -->
         <header class="header">
             <div class="header__container container-1200">
-                <div class="header__row">
+                <div class="header__row flex-between-center">
+                    <!-- logo -->
                     <a class="header__row-logo" href="#">
-                        <img src="./img/logo/logo.svg" alt="logo">
+                        <img class="header__row-img" src="./img/logo/logo.svg" alt="logo">
                     </a>
-                    <div class="header__row-menu">
+
+                    <!-- burger -->
+                    <div class="header__burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <!-- menu -->
+                    <div class="header__row-menu flex-between-center">
                         <nav class="header__row-nav">
-                            <ul class="header__row-list">
+                            <ul class="header__row-list flex-between-center">
                                 <li>
                                     <a class="header__row-link" href="#">Presets</a>
                                 </li>
@@ -43,7 +53,6 @@
         </header>
 
         <!-- main -->
-
         <main class="main">
             <!-- hi section -->
             <div class="main__hi-container container-1440">
@@ -54,7 +63,7 @@
                         <button class="main__hi-button">Read more</button>
                     </div>
                     <div class="main__hi-image">
-                        <img src="./img/James-Mirro.png" alt="James-Mirro">
+                        <img class="main__hi-img" src="./img/James-Mirro.png" alt="James-Mirro">
                     </div>
                 </section>
             </div>
@@ -63,7 +72,7 @@
             <!-- services section -->
             <div class="main__services-container container-1440">
                  <section class="main__services container-1200">
-                    <div class="main__services-title-box">
+                    <div class="main__services-title-box flex-column-center">
                         <img class="main__services-sab-image" src="./img/services.svg" alt="services">
                         <h2 class="main__services-sab-title">Services</h2>
                         <p class="main__services-sab-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
@@ -118,8 +127,8 @@
 
             <!-- preset section -->
             <div class="main__preset-container container-1440">
-                <section class="main__preset container-1200">
-                    <div class="main__preset-title-box">
+                <section class="main__preset container-1200 flex-column-center">
+                    <div class="main__preset-title-box flex-column-center">
                         <img class="main__preset-sab-image" src="./img/services.svg" alt="services">
                         <h2 class="main__preset-sab-title">Preset Store</h2>
                         <p class="main__preset-sab-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
@@ -148,8 +157,8 @@
 
             <!-- offer section -->
             <div class="main__offer-container container-1440">
-                <section class="main__offer container-1200">
-                    <div class="main__offer-box">
+                <section class="main__offer container-1200 flex-column-center">
+                    <div class="main__offer-box flex-between-center">
                         <p class="main__offer-text">Wan't to work together? Follow the link and let's get in touch.</p>
                         <button class="main__offer-button">Contact</button>
                     </div>
@@ -165,7 +174,7 @@
 
                     <!-- logo -->
                     <div class="footer__title">
-                        <img src="./img/logo/logo-footer.png" alt="logo-footer">
+                        <img class="footer__logo" src="./img/logo/logo-footer.png" alt="logo-footer">
                     </div>
 
                     <!-- content -->

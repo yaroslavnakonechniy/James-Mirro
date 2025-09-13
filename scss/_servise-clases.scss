@@ -1,0 +1,25 @@
+body{
+    font-family: $Roboto;
+    background-color: $color-white;
+}
+
+.container-1200{
+    width: $desktop;
+    margin: 0 auto;
+}
+.container-1440{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.flex-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
