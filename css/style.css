@@ -77,6 +77,8 @@ a {
 /* for button in header menu*/
 /* bg for body*/
 /* for section hi*/
+/* for footer section */
+/* for placeholder */
 body {
   font-family: "Roboto", sans-serif;
   background-color: #FFFFFF;
@@ -384,6 +386,9 @@ body {
   height: 10px;
   background: url("../img/arrow.png") center/contain no-repeat;
 }
+.main__offer-container {
+  background: url("../img/rectangle/Rectangle-orange.png") left/contain no-repeat;
+}
 .main__offer {
   display: flex;
   flex-direction: column;
@@ -419,4 +424,101 @@ body {
   border: none;
   border-radius: 10px;
   margin-right: 80px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* footer */
+.footer__container {
+  background: #292C32;
+  padding: 100px 0;
+}
+.footer__container-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__title {
+  margin-bottom: 75px;
+}
+.footer__content {
+  display: flex;
+  margin-bottom: 27px;
+}
+.footer__content-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.footer__content-column {
+  width: 220px;
+}
+.footer__continer-form {
+  width: 457px;
+  position: relative;
+}
+.footer__content-pages {
+  margin-bottom: 39px;
+}
+.footer__content-packs {
+  margin-bottom: 20px;
+}
+.footer__content-title {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #B87D58;
+  margin-bottom: 10px;
+}
+.footer__content-list, .footer__content-form-text, .footer__copy-right {
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.footer__content-form-input {
+  width: 458px;
+  height: 53px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 8px;
+  padding-left: 25px;
+}
+.footer__content-form-input::-moz-placeholder {
+  color: #ABABAB;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.footer__content-form-input::placeholder {
+  color: #ABABAB;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+}
+.footer__content-submit {
+  position: absolute;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  background: #292C32;
+  color: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+  width: 71px;
+  height: 39px;
+  top: 107px;
+  right: -20px;
+}
+.footer__copy-right-box {
+  width: 1220px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__media-contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* end footer *//*# sourceMappingURL=style.css.map */
