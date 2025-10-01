@@ -3,6 +3,29 @@ body{
     background-color: $color-white;
 }
 
+a {
+  display: inline-block; /* обов’язково для transform */
+  transition: transform 0.3s ease;
+}
+
+a:hover {
+  transform: scale(1.2);
+}
+
+button {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
 .container-1200{
     width: $desktop;
     margin: 0 auto;
