@@ -1,9 +1,9 @@
 
-@import "_reset-style";
-@import "_fonts";
-@import "_variables";
-@import "_mixin";
-@import "_servise-clases";
+@import "reset-style";
+@import "fonts";
+@import "variables";
+@import "mixin";
+@import "servise-clases";
 
 /* header*/
 .header {
@@ -562,6 +562,10 @@
             @include size-line(16px, 32px, 400);
         }
     }
+
+    &__content-list-link {
+        color: $color-white;
+    } 
 
     &__content-submit{
         position: absolute;
