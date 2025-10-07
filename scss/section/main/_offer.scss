@@ -1,0 +1,62 @@
+
+@use '../../base/variables' as *;
+@use '../../base/mixin' as *;
+
+.main{
+    &__offer-container {
+        background: url('../img/rectangle/Rectangle-orange.png') left / contain no-repeat;
+	}
+
+	&__offer-box {
+        width: 800px;
+        height: 259px;
+        background: $color-for-bg;
+        margin: 100px 0;
+        border-radius: 10px;
+        border: none;
+	}
+
+	&__offer-text {
+        width: 313px;
+        @include size-line(28px, 33px, 400);
+        color: $color-dark;
+        margin: 80px;
+		}
+
+	&__offer-button {
+        width: 125px;
+        height: 58px;
+        background: $color-gren;
+        @include size-line(20px, 28px, 400);
+        color: $color-white;
+        border: none;
+        border-radius: 10px;
+        margin-right: 80px;
+	}
+}
+
+@include mobile(){
+.main{
+&__offer-box {
+            width: 1000px;
+            height: 500px;
+            display:flex;
+            flex-direction: column;
+            margin: 0 50px;
+            border-radius: 30px;
+		}
+
+		&__offer-text {
+            width: 800px;
+            @include size-line(60px, 70px, 400);
+		}
+
+		&__offer-button {
+            width: 400px;
+            height: 100px;
+            @include size-line(58px, 60px, 400);
+            margin-bottom: 50px;
+		}
+        /* end offer mobile main */
+    }		
+}

@@ -1,3 +1,6 @@
+
+@use './variables' as *;
+
 /* font-size  and font-weight */
 @mixin size-line($font-size, $line-height, $font-weight){
     font-size: $font-size;
