@@ -1,0 +1,75 @@
+
+@use '../../base/variables' as *;
+@use '../../base/mixin' as *;
+
+.main {
+
+    /* hi section */
+    &__hi-container{
+        background: $color-for-bg;
+        background: 
+            url('../img/rectangle/Rectangle-top-right-green.png') right / contain no-repeat,
+            url('../img/rectangle/Rectangle-left-bottom-orange.png') left / contain no-repeat;
+    }
+
+	&__hi {
+        display: flex;
+        align-items: center;
+        padding: 100px 0;
+	}
+
+    &__hi-title{
+        @include size-line(48px, 58px, 400);
+        font-family: $SourceSerif;
+        color: $color-gren;
+        margin-bottom: 11px;
+    }
+
+    &__hi-description{
+        @include size-line(16px, 22px, 400);
+        color:$color-dark;
+        margin-bottom: 17px;
+    }
+
+    &__hi-button{
+        width: 118px;
+        height: 44px;
+        color: $color-white;
+        @include size-line(16px, 22px, 400);
+        border-radius: 10px;
+        border: none;
+        background: $color-gren;
+    }
+
+	&__hi-image {
+        width: 552px;
+        height: 773px;
+	}
+    /* end hi section */
+}
+
+    @include mobile(){
+        .main{
+/* hi mobile main */
+        &__hi-text{
+            text-align: center;
+        }
+
+        &__hi-title{
+            @include size-line(78px, 80px, 600);
+            margin-bottom: 50px;
+        }
+
+        &__hi-description{
+            display: none;
+        }
+
+        &__hi-button{
+            width: 400px;
+            height: 100px;
+            @include size-line(58px, 60px, 400);
+            margin-bottom: 50px;
+        }
+        /* end hi mobile main */
+        }    
+}
